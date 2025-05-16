@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Image Viewer</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        img {
+            max-width: 80%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Flask App</h1>
+    <img src="{{ url_for('static', filename='Flask-logo.png') }}" alt="Flask Logo">
+    <p>Flask is a lightweight and powerful web framework for Python. It’s often called a "micro-framework" because it provides the essentials for web development without unnecessary complexity. Unlike Django, which comes with built-in features like authentication and an admin panel, Flask keeps things minimal and lets us add only what we need.This Flask tutorial covers everything from setup and installation to advanced topics like authentication, database integration and deployment. You'll also find Flask project ideas, FAQs and interview questions to help you prepare for job interviews!</p>
+</body>
+</html>
